@@ -12,3 +12,4 @@ public interface TaskService {
         return "COMPLETED".equalsIgnoreCase(task.getStatus());
     }
 }
+
