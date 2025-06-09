@@ -19,7 +19,7 @@ public class EnvironmentInfo {
 
     @GetMapping
     public String getEnvironment() {
-        return environment;
+                return environment;
     }
 
     @GetMapping("/log")
