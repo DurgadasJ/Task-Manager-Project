@@ -13,15 +13,12 @@ public class EnvironmentInfo {
 
     @Autowired
     private TaskLogger taskLogger;
-
     @Value("${app.environment}")
     private String environment;
-
     @GetMapping
     public String getEnvironment() {
-                return environment;
+        return environment;
     }
-
     @GetMapping("/log")
     public String submitLog(){
         taskLogger.log("Log submitted");
